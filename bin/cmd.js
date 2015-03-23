@@ -34,7 +34,7 @@ var config = argv.config ? require(path.resolve(process.cwd(), argv.config)) : {
 
 config.target = argv.target || config.target;
 config.ws = argv.ws || config.ws || false;
-config.http = argv.http || config.http;
+config.http = argv.port || 80
 config.changeOrigin = argv['change-origin'] || config.changeOrigin;
 config.rewriteHost = argv['rewrite-host'] || config.rewriteHost;
 config.https = argv.ssl && argv.root && argv.key && argv.cert && argv.ca
